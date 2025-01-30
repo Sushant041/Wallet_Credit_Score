@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+# Introduction
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DeFiScore is a blockchain-based platform that calculates a credit score for wallets, offering insights into financial health and trustworthiness. By analyzing transaction history, portfolio value, smart contract interactions, NFT holdings, and DeFi activity across major blockchains like Ethereum, Solana, Polygon, Binance, and Bitcoin, DeFiScore provides a comprehensive wallet score. Leveraging data from Unleash APIs, it enables informed decisions for risk management, lending, and investments, fostering greater trust in the DeFi ecosystem.
 
-Currently, two official plugins are available:
+![Screenshot 2025-01-30 003529.png](https://cdn.dorahacks.io/static/files/194b37b8975db57fb9d12c641feb8d8d.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot 2025-01-30 003620.png](https://cdn.dorahacks.io/static/files/194b37c02709f38c3c00b1649e0b910e.png)
 
-## Expanding the ESLint configuration
+![Screenshot 2025-01-30 003641.png](https://cdn.dorahacks.io/static/files/194b37c8d8a378686e3e1df4c5a9c2a1.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![Screenshot 2025-01-30 003831.png](https://cdn.dorahacks.io/static/files/194b37cb0401173c30a7f44493f97d30.png)
 
-- Configure the top-level `parserOptions` property like this:
+### **Key Features of DeFiScore:**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Cross-Chain Support:** Aggregates data from multiple blockchains, including Ethereum, Solana, Polygon, Binance, and Bitcoin, to provide a comprehensive wallet score.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Comprehensive Wallet Analysis:** Considers a variety of factors such as transaction history, portfolio value, wallet reputation, NFT holdings, and DeFi activity.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Risk Evaluation:** Analyzes smart contract interactions and wallet behaviors to assess potential risk factors.
+ 
+1. **Dynamic Credit Scoring:** Calculates an evolving wallet score that reflects both historical and current financial activity.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Transparent and Reliable:** Utilizes Unleash APIs for accurate and up-to-date data from different chains, ensuring transparency and trust in the scoring process.
+
+1. **DeFi Portfolio Insights:** Provides a detailed view of a wallet’s DeFi investments, helping users optimize and manage their portfolios.
+
+1. **Wallet Reputation Score:** Measures trustworthiness based on past interactions, offering a reputation score that’s separate from the credit score for further insights.
+ 
+1. **User Empowerment:** Allows users to track and improve their wallet's credit score over time, increasing credibility in the DeFi ecosystem.
